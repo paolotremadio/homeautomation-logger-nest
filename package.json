@@ -1,0 +1,37 @@
+{
+  "name": "homeautomation-logger-nest",
+  "version": "0.0.1",
+  "description": "Keep a log of every Nest thermostat adjustment",
+  "license": "ISC",
+  "author": {
+    "name": "Paolo Tremadio"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paolotremadio/homeautomation-logger-nest.git"
+  },
+  "bugs": {
+    "url": "http://github.com/paolotremadio/homeautomation-logger-nest/issues"
+  },
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.2",
+    "dotenv": "^6.0.0",
+    "firebase": "^2.3.2",
+    "forever": "^0.15.3",
+    "homeautomation-winston-logger": "^0.0.1",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "eslint": "^4.16.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  },
+  "scripts": {
+    "lint": "./node_modules/eslint/bin/eslint.js . --ext .js",
+    "start": "./node_modules/forever/bin/forever -m 99999999999999999999999999999 --fifo src/index.js"
+  }
+}
