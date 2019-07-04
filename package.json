@@ -23,7 +23,8 @@
     "firebase": "^2.3.2",
     "forever": "^0.15.3",
     "homeautomation-winston-logger": "^0.0.2",
-    "request-promise": "^4.2.2"
+    "request-promise": "^4.2.2",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "eslint": "^4.16.0",
@@ -32,6 +33,9 @@
   },
   "scripts": {
     "lint": "./node_modules/eslint/bin/eslint.js . --ext .js",
-    "start": "./node_modules/forever/bin/forever -m 99999999999999999999999999999 --fifo src/index.js"
-  }
+    "start": "./node_modules/forever/bin/forever -m 99999999999999999999999999999 --fifo src/index.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
