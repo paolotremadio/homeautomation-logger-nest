@@ -21,7 +21,7 @@
     "bluebird": "^3.5.2",
     "dotenv": "^6.0.0",
     "firebase": "^2.3.2",
-    "forever": "^0.15.3",
+    "forever": "^2.0.0",
     "homeautomation-winston-logger": "^0.0.2",
     "request-promise": "^4.2.2"
   },
